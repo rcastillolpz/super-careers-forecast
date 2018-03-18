@@ -10,7 +10,7 @@ The API is fed by [OpenWeatherMap](www.openweathermap.org) API.
 
 ## DOCKER Files:
 - `Dockerfile`
-- `requirements.txt`: This is file is read by Dockerfile
+- `requirements.txt`: This is read by Dockerfile
 - `docker-compose.yml`
 
 ## Requirements:
@@ -31,7 +31,7 @@ Now, the app is running. You can call the API on:
 http://<docker ip>:5000/weather/london/yyyymmdd/hhmm/
 ```
 * Optional. If you prefer, you can run the app with **docker-composer**, so you will not have to use docker ip.
-If previous container is running, we should stop it before execute **docker-composer**:
+If previous container is running, you should stop it before execute **docker-composer**:
 ```
 docker stop <container id>
 ```
