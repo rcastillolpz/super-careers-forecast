@@ -14,7 +14,7 @@ The API is fed by [OpenWeatherMap](www.openweathermap.org) API.
 - `docker-compose.yml`
 
 ## Requirements:
-You will require to have docker installed on your computer.
+You will need to have docker installed on your computer.
 
 ## How to run and set the application ?
 * Download the repository.
@@ -26,20 +26,19 @@ docker build -t super-careers-forecast:latest .
 ```
 docker run -p 5000:5000 super-careers-forecast
 ```
-Now, the app is running. You can call the API on:
+* Now, the app is running. You can call the API on:
 ```
 http://<docker ip>:5000/weather/london/yyyymmdd/hhmm/
 ```
-* Optional. If you prefer, you can run the app with **docker-composer**, so you will not have to use docker ip.
-If previous container is running, you should stop it before execute **docker-composer**:
+* Optional. If you prefer, you can run the app with **docker-composer**, so you will not have to use docker ip. If previous container is running, you should stop it before execute **docker-composer**:
 ```
 docker stop <container id>
 ```
-Now, we can exeute **docker-composer**:
+* Now, we can exeute **docker-composer**:
 ```
 docker-composer up
 ```
-You could chase the API on:
+* You could chase the API on:
 ```
 http://localhost:5000/weather/london/yyyymmdd/hhmm/
 ```
